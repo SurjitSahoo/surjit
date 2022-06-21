@@ -1,5 +1,9 @@
 {
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
-  "projects": {}
+  "projects": {
+    "thoughts": "packages/thoughts",
+    "thoughts-ui": "packages/thoughts-ui",
+    "thoughts-ui-e2e": "packages/thoughts-ui-e2e"
+  }
 }
