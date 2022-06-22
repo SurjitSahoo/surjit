@@ -1,0 +1,25 @@
+version: '3.4'
+services:
+  thoughts-api:
+    container_name: thoughts-api
+    env_file:
+      - packages/thoughts/.env.production
+    build:
+      context: .
+      target: thoughts-api
+    ports:
+      - 3000:3000
+    networks:
+      thoughts:
+
+  thoughts-ui:
+    container_name: thoughts-ui
+    build:
+      context: .
+      target: thoughts-ui
+    ports:
+      - 80:8080
+    networks:
+      thoughts:
+networks:
+  thoughts:
