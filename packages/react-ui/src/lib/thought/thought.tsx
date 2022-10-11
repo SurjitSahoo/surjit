@@ -1,10 +1,13 @@
-/* eslint-disable-next-line */
-export interface ThoughtProps {}
+import { IThought } from '@surjit/types';
 
-export function Thought(props: ThoughtProps) {
+export interface ThoughtProps {
+  thought: IThought;
+}
+
+export function Thought({ thought }: ThoughtProps) {
   return (
     <div>
-      <h1 className="text-yellow-600">Welcome to Thought! {Math.random()}</h1>
+      <h1 className="text-yellow-600">{thought.title}</h1>
     </div>
   );
 }

@@ -2,6 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "js-tools": "packages/js-tools",
     "react-ui": "packages/react-ui",
     "thoughts": "packages/thoughts",
     "thoughts-ui": "packages/thoughts-ui",

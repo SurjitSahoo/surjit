@@ -20,13 +20,18 @@ const Posts: CollectionConfig = {
       relationTo: 'users',
     },
     {
+      name: 'language',
+      type: 'relationship',
+      relationTo: 'language',
+    },
+    {
       name: 'publishedDate',
       type: 'date',
     },
     {
       name: 'category',
       type: 'relationship',
-      relationTo: 'categories'
+      relationTo: 'categories',
     },
     {
       name: 'tags',
@@ -36,7 +41,13 @@ const Posts: CollectionConfig = {
     },
     {
       name: 'content',
-      type: 'richText'
+      type: 'richText',
+    },
+    {
+      name: 'related',
+      type: 'relationship',
+      relationTo: 'posts',
+      hasMany: true,
     },
     {
       name: 'status',
@@ -54,9 +65,9 @@ const Posts: CollectionConfig = {
       defaultValue: 'draft',
       admin: {
         position: 'sidebar',
-      }
-    }
+      },
+    },
   ],
-}
+};
 
 export default Posts;

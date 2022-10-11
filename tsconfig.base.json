@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@surjit/../lib//react": ["lib/react/src/index.ts"],
+      "@surjit/js-tools": ["packages/js-tools/src/index.ts"],
       "@surjit/lib-react": ["packages/lib/react/src/index.ts"],
       "@surjit/react-ui": ["packages/react-ui/src/index.ts"],
       "@surjit/types": ["packages/types/src/index.ts"]
